@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--   <!DOCTYPE orders SYSTEM "order.dtd">-->
+<?xml-stylesheet type='text/xsl' href='lab2.xsl'?>
+
+<orders xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="lab2.xsd">
+  <order>
+    <orderid>120</orderid>
+    <description>Audrey Hepburn Red Gown designed by ZARA</description>
+    <requestdate>29/12/2021</requestdate>
+    <lineitem>
+      <movie>
+        <movieid>100</movieid>
+        <name>Funny Face</name>
+        <releasedate>13/02/1957</releasedate>
+        <genre>Drama</genre>
+        
+        <actors>
+          <actor>
+            <fname>Audrey</fname>
+            <lname>Hepburn</lname>
+            <age>63</age>
+          </actor>
+        </actors>
+      </movie>
+        <quantity>1</quantity>
+        <price>500</price>
+    </lineitem>
+  </order>
+
+  <order>
+    <orderid>121</orderid>
+    <description>Avatar Hoodie</description>
+    <requestdate>24/12/2021</requestdate>
+
+    <lineitem>
+      <movie>
+        <movieid>101</movieid>
+        <name>Avatar</name>
+        <releasedate>18/12/2009</releasedate>
+        <genre>Science-Fiction</genre>
+
+        <actors>
+          <actor>
+            <fname>Sam</fname>
+            <lname>Worthington</lname>
+            <age>45</age>
+          </actor>
+
+          <actor>
+            <fname>Sigourney</fname>
+            <lname>Weaver</lname>
+            <age>72</age>
+          </actor>
+        </actors>
+      </movie>
+        <quantity>2</quantity>
+        <price>900</price>
+    </lineitem>
+  </order>
+
+  <order>
+    <orderid>122</orderid>
+    <description>High School Musical Mug</description>
+    <requestdate>21/12/2021</requestdate>
+
+    <lineitem>
+      <movie>
+        <movieid>103</movieid>
+        <name>High School Musical</name>
+        <releasedate>20/01/2006</releasedate>
+        <genre>Drama</genre>
+
+        <actors>
+          <actor>
+            <fname>Vanessa</fname>
+            <lname>Hudgens</lname>
+            <age>33</age>
+          </actor>
+
+          <actor>
+            <fname>Zac</fname>
+            <lname>Efron</lname>
+            <age>34</age>
+          </actor>
+        </actors>
+      </movie>
+        <quantity>1</quantity>
+        <price>220</price>
+    </lineitem>
+  </order>
+
+  <order>
+    <orderid>123</orderid>
+    <description>Hunger Games Sweatshirt</description>
+    <requestdate>25/12/2021</requestdate>
+
+    <lineitem>
+      <movie>
+        <movieid>104</movieid>
+        <name>Hunger Games</name>
+        <releasedate>23/03/2012</releasedate>
+        <genre>Thriller</genre>
+
+        <actors>
+          <actor>
+            <fname>Jennifer</fname>
+            <lname>Lawrence</lname>
+            <age>31</age>
+          </actor>
+        </actors>
+      </movie>
+        <quantity>1</quantity>
+        <price>999</price>
+    </lineitem>
+  </order>
+
+  <order>
+    <orderid>124</orderid>
+    <description>Ra.One Tshirt</description>
+    <requestdate>23/12/2021</requestdate>
+
+    <lineitem>
+      <movie>
+        <movieid>105</movieid>
+        <name>Ra.One</name>
+        <releasedate>26/10/2011</releasedate>
+        <genre>Science-Fiction</genre>
+
+        <actors>
+          <actor>
+            <fname>ShahRukh</fname>
+            <lname>Khan</lname>
+            <age>56</age>
+          </actor>
+
+          <actor>
+            <fname>Kareena</fname>
+            <lname>Kapoor</lname>
+            <age>41</age>
+          </actor>
+        </actors>
+      </movie>
+        <quantity>2</quantity>
+        <price>299</price>
+    </lineitem>
+  </order>
+
+  <order>
+    <orderid>125</orderid>
+    <description>White Pant Suit</description>
+    <requestdate>02/01/2022</requestdate>
+
+    <lineitem>
+      <movie>
+        <movieid>106</movieid>
+        <name>A Simple Favor</name>
+        <releasedate>14/09/2018</releasedate>
+        <genre>Mystery</genre>
+
+        <actors>
+          <actor>
+            <fname>Blake</fname>
+            <lname>Lively</lname>
+            <age>34</age>
+          </actor>
+
+          <actor>
+            <fname>Anna</fname>
+            <lname>Kedrick</lname>
+            <age>36</age>
+          </actor>
+        </actors>
+      </movie>
+        <quantity>4</quantity>
+        <price>1299</price>
+    </lineitem>
+  </order>
+</orders>

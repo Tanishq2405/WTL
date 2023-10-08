@@ -1,0 +1,25 @@
+<!ELEMENT orders (order+)> 
+<!ELEMENT order (orderid,description,requestdate,lineitem+)>
+<!ELEMENT orderid (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT requestdate (#PCDATA)>
+
+<!ELEMENT lineitem (movie+,quantity,price)>
+<!ELEMENT quantity (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!-- Price Default value is 100 -->
+<!ATTLIST price type CDATA "100">
+
+<!ELEMENT movie (movieid,name,releasedate,genre,actors+)>
+<!ELEMENT movieid (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT releasedate (#PCDATA)>
+<!-- Genre can only be among the 4 values -->
+<!ELEMENT genre (#PCDATA)>
+<!ATTLIST genre type CDATA "Drama|Thriller|Science-Fiction|Mystery">
+
+<!ELEMENT actors (actor+)>
+<!ELEMENT actor (fname,lname,age?)>
+<!ELEMENT fname (#PCDATA)>
+<!ELEMENT lname (#PCDATA)>
+<!ELEMENT age ANY>

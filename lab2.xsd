@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema">
+<element name="orders">
+	<complexType>
+		<sequence>
+			<element name="order" minOccurs="1" maxOccurs="unbounded">
+				<complexType>
+					<sequence>
+						<element type="string" name="orderid"/>
+						<element type="string" name="description"/>
+						<element type="string" name="requestdate"/>
+						
+						<element name="lineitem">
+							<complexType>
+								<!-- Movies Information -->
+								<sequence>
+									<element name="movie">
+										<complexType>
+											<sequence>
+												<element type="string" name="movieid"/>
+												<element type="string" name="name"/>
+												<element type="string" name="releasedate"/>
+												<!-- Genre can only be 1 of 4 categories -->
+ 												<element name="genre" >
+ 													<simpleType>
+ 														<restriction base="string">
+ 															<enumeration value="Science-Fiction"/>
+ 															<enumeration value="Mystery"/>
+ 															<enumeration value="Thriller"/>
+ 															<enumeration value="Drama"/>
+ 														</restriction>
+ 													</simpleType>
+ 												</element>
+ 												
+ 												<!-- Actors Information -->
+ 												<element name="actors" maxOccurs="unbounded" minOccurs="0">
+ 													<complexType>
+ 														<sequence>
+ 															<element name="actor" maxOccurs="unbounded" minOccurs="0">
+ 																<complexType>
+ 																	<sequence>
+ 																		<element type="string" name="fname"/>
+ 																		<element type="string" name="lname"/>
+ 																		<!-- Age Is Optional -->
+ 																		<element type="byte" name="age" minOccurs="0"/>
+ 																	</sequence>
+ 																</complexType>
+ 															</element>
+ 														</sequence>
+ 													</complexType>
+ 												</element>
+											</sequence>
+										</complexType>
+									</element>
+									
+									<element type="byte" name="quantity" />
+									<!-- Price must be greater than 0 -->
+									<element name="price">
+										<simpleType>
+	 										<restriction base="integer">
+	 											<minInclusive value="0"/>
+	 										</restriction>
+	 									</simpleType>
+									</element>
+								</sequence>
+							</complexType>
+						</element>
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+</element>
+</schema>
